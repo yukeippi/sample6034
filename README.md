@@ -1,4 +1,4 @@
-# 「Unixドメインソケット　/var/run/postgresql/.s.PGSQL.5432で通信を受け付けていますか？」のエラーが出る場合
+### 「Unixドメインソケット　/var/run/postgresql/.s.PGSQL.5432で通信を受け付けていますか？」のエラーが出る場合
 
 その環境におけるdatabase.ymlを参照できていない可能性が高い。この例ではcredintialsにデータベースの設定を入れ、参照させることで解消した。
 
