@@ -8,7 +8,7 @@ EDITOR="vim" bin/rails credentials:edit
 
 ```yaml
 db:
-  username: postgres
+  username: (username)
   password: (password)
   host: (database endpoint)
 ```
