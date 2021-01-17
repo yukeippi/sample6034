@@ -13,7 +13,7 @@ db:
   host: (database endpoint)
 ```
   
-config/database.ymlを下記のように編集。
+config/database.ymlを下記のように編集。（対象がproductionの場合は、production部分だけ）
 
 ```yaml
 production:
