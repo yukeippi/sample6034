@@ -1,9 +1,11 @@
-### 環境
+### 本番環境
 - Ruby 2.6.5
 - Rails 6.0.3.4
 - PosgtreSQL
 - Nginx + Puma
 - rbenv
+- Node.js
+- yarn
 
 ### 「Unixドメインソケット　/var/run/postgresql/.s.PGSQL.5432で通信を受け付けていますか？」のエラーが出る場合
 
