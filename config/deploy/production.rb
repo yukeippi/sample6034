@@ -8,7 +8,7 @@ set :ssh_options, {
   keys:         [ '~/.ssh/aws-keypair-20200121.pem' ],
 }
 
-server '54.248.28.109', user: 'ec2-user', roles: %w{app db web}
+server '52.195.2.51', user: 'ec2-user', roles: %w{app db web}
 
 # server-based syntax
 # ======================
