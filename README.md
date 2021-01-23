@@ -3,14 +3,15 @@
 - master.keyは本番サーバーに直接設置する。
 - データベースのパスワードなどの設定はcredentials.yml.encに含める。
 - Pumaはsystemdにてデーモン化する。
+- Railsアプリのインストール先は「/var/rails/sample6034/」
+- デプロイはCapistranoで行う。
 
 # 本番実行環境
 - Ruby 2.6.5
 - Rails 6.0.3.4
 - PosgtreSQL
 - Nginx + Puma
-- rbenv
-- Node.js
+- Node.js 14
 - yarn
 
 # 本番サーバー(Amazon Linux 2)の設定手順
@@ -148,9 +149,9 @@ $ sudo chown ec2-user:ec2-user rails
 デプロイ設定を行う。
 ```bash
 $ vim config/deploy.rb
-（編集）
+（ここのコードの通り、編集）
 $ vim config/deploy/production.rb
-（編集）
+（ここのコードの通り、編集）
 ```
 
 デプロイチェックを実施。
