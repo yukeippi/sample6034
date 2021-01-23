@@ -297,6 +297,10 @@ $ sudo systemctl enable puma.service
 $ sudo systemctl enable nginx.service
 ```
 
+＜pumaのデーモン化の詳細＞
+
+https://github.com/puma/puma/blob/v4.3.7/docs/systemd.md#alternative-forking-configuration
+
 # トラブルシューティング
 ### 「Unixドメインソケット　/var/run/postgresql/.s.PGSQL.5432で通信を受け付けていますか？」のエラーが出る場合
 
