@@ -137,7 +137,7 @@ production:
 
 12. デプロイ先設定
 
-ここではアプリケーションのドキュメントルートを「/var/rails」とする。
+Railsアプリの設置場所を「/var/rails」とする。Railsアプリの実行はrootではなく、ec2-userで行うので、このディレクトリの所有者をec2-userにする。
 ```bash
 $ cd /var/
 $ sudo mkdir rails
