@@ -1,4 +1,9 @@
-### 本番環境
+# 前提条件
+- rubyのインストールはrbenv + ruby-buildで行う。
+- master.keyは本番サーバーに直接設置する。
+- データベースのパスワードなどの設定はcredentials.yml.encに含める。
+
+# 本番実行環境
 - Ruby 2.6.5
 - Rails 6.0.3.4
 - PosgtreSQL
@@ -7,7 +12,7 @@
 - Node.js
 - yarn
 
-### 本番サーバー(Amazon Linux 2)の設定手順
+# 本番サーバー(Amazon Linux 2)の設定手順
 1. ライブラリアップデート
 ```bash
 $ sudo yum update -y
@@ -63,7 +68,6 @@ Rubyのインストール
 ```bash
 $ rbenv install 2.6.5
 $ rbenv global 2.6.5
-
 ```
 
 7. node.jsのインストール
@@ -292,6 +296,7 @@ $ sudo systemctl enable puma.service
 $ sudo systemctl enable nginx.service
 ```
 
+# トラブルシューティング
 ### 「Unixドメインソケット　/var/run/postgresql/.s.PGSQL.5432で通信を受け付けていますか？」のエラーが出る場合
 
 その環境におけるdatabase.ymlを参照できていない可能性が高い。この例ではcredintialsにデータベースの設定を入れ、参照させることで解消した。
