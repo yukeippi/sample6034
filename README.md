@@ -2,6 +2,7 @@
 - rubyのインストールはrbenv + ruby-buildで行う。
 - master.keyは本番サーバーに直接設置する。
 - データベースのパスワードなどの設定はcredentials.yml.encに含める。
+- Pumaはsystemdにてデーモン化する。
 
 # 本番実行環境
 - Ruby 2.6.5
